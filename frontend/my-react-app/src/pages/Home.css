@@ -1,0 +1,15 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.home__loading,
+.home__error {
+  text-align: center;
+  padding: 2rem;
+}
+
+.home__error {
+  color: #c00;
+}
