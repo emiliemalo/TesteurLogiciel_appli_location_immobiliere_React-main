@@ -1,0 +1,8 @@
+export { default as Banner } from './Banner/Banner'
+export { default as BannerAbout } from './BannerAbout/BannerAbout'
+export { default as Header } from './Header/Header'
+export { default as Cards } from './Cards/Cards'
+export { default as Carousel } from './Carousel/Carousel'
+export { default as Collapse } from './Collapse/Collapse'
+export { default as Footer } from './Footer/Footer'
+export { default as Gallery } from './Gallery/Gallery'

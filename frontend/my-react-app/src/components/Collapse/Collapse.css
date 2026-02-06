@@ -1,0 +1,41 @@
+.collapse {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.collapse__trigger {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border: none;
+  background: var(--collapse-bg, #f6f6f6);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: left;
+}
+
+.collapse__trigger:hover {
+  background: var(--collapse-bg-hover, #eee);
+}
+
+.collapse__icon {
+  font-size: 0.75rem;
+}
+
+.collapse__content {
+  padding: 1rem;
+  background: white;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.collapse__content p {
+  margin: 0 0 0.5rem;
+}
+
+.collapse__content p:last-child {
+  margin-bottom: 0;
+}

@@ -1,0 +1,11 @@
+.footer {
+  padding: 1.5rem 2rem;
+  text-align: center;
+  box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.footer__text {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--text-muted, #666);
+}
