@@ -9,7 +9,7 @@
   border-radius: 0.75rem;
   overflow: hidden;
   text-decoration: none;
-  color: inherit;
+  color: #000000;
   background: var(--card-bg, #f6f6f6);
 }
 

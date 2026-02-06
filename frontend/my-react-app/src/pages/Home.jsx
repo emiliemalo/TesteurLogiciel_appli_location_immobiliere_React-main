@@ -12,7 +12,10 @@ function Home() {
   const [error, setError] = useState(null)
 
   useEffect(() => {
-    fetch(`${API_BASE}/properties`)
+    const controller = new AbortController()
+    const timeoutId = setTimeout(() => controller.abort(), 8000)
+
+    fetch(`${API_BASE}/properties`, { signal: controller.signal })
       .then((res) => {
         if (!res.ok) throw new Error(`Erreur ${res.status}`)
         return res.json()
@@ -21,8 +24,11 @@ function Home() {
         setProperties(data)
         setError(null)
       })
-      .catch((err) => setError(err.message))
-      .finally(() => setLoading(false))
+      .catch((err) => setError(err.message || 'Le backend ne répond pas. Lancez-le (ex. Docker sur le port 8080).'))
+      .finally(() => {
+        clearTimeout(timeoutId)
+        setLoading(false)
+      })
   }, [])
 
   if (loading) return <p className="home__loading">Chargement des logements…</p>

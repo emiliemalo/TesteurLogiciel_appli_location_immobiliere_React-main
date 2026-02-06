@@ -1,7 +1,7 @@
 .banner {
   position: relative;
   width: 100%;
-  border-radius: 1rem;
+  border-radius: 25px;
   overflow: hidden;
 }
 
@@ -9,6 +9,8 @@
   width: 100%;
   height: 12rem;
   object-fit: cover;
+  display: block;
+  border-radius: 25px;
 }
 
 .banner__title {
@@ -17,10 +19,15 @@
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
-  padding: 0 1rem;
-  color: white;
-  font-size: 1.5rem;
-  font-weight: 500;
+  padding: 0.5rem 1.5rem;
+  color: #fff;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+  font-family: Montserrat, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 142.6%;
   text-align: center;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
 }

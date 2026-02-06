@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom'
+import kasaLogo from '../../assets/K-LOGO.svg'
+import Footer from '../Footer/Footer'
 import './Layout.css'
 
 function Layout({ children }) {
@@ -6,7 +8,7 @@ function Layout({ children }) {
     <div className="layout">
       <header className="layout__header">
         <Link to="/" className="layout__logo">
-          Kasa
+          <img src={kasaLogo} alt="Kasa" className="layout__logo-img" />
         </Link>
         <nav className="layout__nav">
           <Link to="/" className="layout__nav-link">
@@ -20,9 +22,7 @@ function Layout({ children }) {
       <main className="layout__main">
         {children}
       </main>
-      <footer className="layout__footer">
-        <p>© {new Date().getFullYear()} Kasa. Tous droits réservés.</p>
-      </footer>
+      <Footer />
     </div>
   )
 }

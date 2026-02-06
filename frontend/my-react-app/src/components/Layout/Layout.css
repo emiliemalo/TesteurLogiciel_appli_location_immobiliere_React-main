@@ -1,8 +1,8 @@
-/* Layout principal */
 .layout {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: #ffffff;
 }
 
 .layout__header {
@@ -14,14 +14,18 @@
 }
 
 .layout__logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: inherit;
+  display: block;
   text-decoration: none;
 }
 
-.layout__logo:hover {
-  text-decoration: underline;
+.layout__logo-img {
+  height: 68px;
+  width: auto;
+  display: block;
+}
+
+.layout__logo:hover .layout__logo-img {
+  opacity: 0.9;
 }
 
 .layout__nav {
@@ -30,9 +34,16 @@
 }
 
 .layout__nav-link {
-  color: inherit;
+  color: #000000;
   text-decoration: none;
   font-weight: 500;
+  font-size: 24px;
+}
+
+.layout__nav-link:hover,
+.layout__nav-link:active,
+.layout__nav-link:visited {
+  color: #000000;
 }
 
 .layout__nav-link:hover {
@@ -48,27 +59,13 @@
   box-sizing: border-box;
 }
 
-.layout__footer {
-  padding: 1.5rem 2rem;
-  text-align: center;
-  box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.1);
-}
-
-.layout__footer p {
-  margin: 0;
-  font-size: 0.875rem;
-  color: var(--text-muted, #666);
-}
-
 @media (max-width: 768px) {
   .layout__header {
     padding: 1rem;
   }
-
   .layout__nav {
     gap: 1rem;
   }
-
   .layout__main {
     padding: 1rem;
   }
