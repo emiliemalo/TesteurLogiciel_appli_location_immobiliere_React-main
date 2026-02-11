@@ -1,6 +1,6 @@
 import BannerAbout from '../components/BannerAbout/BannerAbout'
 import Collapse from '../components/Collapse/Collapse'
-import aboutImage from '../assets/background_image.jpg'
+import aboutImage from '../assets/background_image2.png'
 import './About.css'
 
 function About() {
