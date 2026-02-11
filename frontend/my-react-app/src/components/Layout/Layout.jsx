@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import kasaLogo from '../../assets/K-LOGO.svg'
+import kasaLogo from '../../assets/logo.png'
 import Footer from '../Footer/Footer'
 import './Layout.css'
 

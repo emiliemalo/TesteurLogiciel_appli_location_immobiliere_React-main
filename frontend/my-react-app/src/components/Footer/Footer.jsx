@@ -1,4 +1,4 @@
-import kasaLogo from '../../assets/K-LOGO.svg'
+import kasaLogo from '../../assets/logo.png'
 import './Footer.css'
 
 function Footer() {

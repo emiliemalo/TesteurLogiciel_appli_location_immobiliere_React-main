@@ -1,0 +1,25 @@
+.not-found {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.not-found__title {
+  font-size: 6rem;
+  margin: 0 0 1rem;
+  color: #ff6060;
+}
+
+.not-found__text {
+  font-size: 1.125rem;
+  margin: 0 0 2rem;
+  color: #000;
+}
+
+.not-found__link {
+  color: #000;
+  text-decoration: underline;
+}
+
+.not-found__link:hover {
+  color: #ff6060;
+}

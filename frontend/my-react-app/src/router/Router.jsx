@@ -1,13 +1,16 @@
 import { Routes, Route } from 'react-router-dom'
 import Home from '../pages/Home'
+import About from '../pages/About'
+import Property from '../pages/Property'
+import NotFound from '../pages/NotFound'
 
 function Router() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/about" element={<h1>À propos</h1>} />
-      {/* Ajoutez vos routes ici au fur et à mesure */}
-      <Route path="*" element={<h1>Page non trouvée</h1>} />
+      <Route path="/about" element={<About />} />
+      <Route path="/properties/:id" element={<Property />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   )
 }
