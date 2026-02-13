@@ -31,3 +31,13 @@
   line-height: 142.6%;
   text-align: center;
 }
+
+@media (max-width: 768px) {
+  .banner__img {
+    height: 8rem;
+  }
+  .banner__title {
+    font-size: 24px;
+    padding: 0.25rem 0.75rem;
+  }
+}

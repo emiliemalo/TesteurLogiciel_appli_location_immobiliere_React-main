@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import Carousel from '../components/Carousel/Carousel'
+import Gallery from '../components/Gallery/Gallery'
 import Collapse from '../components/Collapse/Collapse'
 import NotFound from './NotFound'
 import './Property.css'
@@ -43,7 +43,7 @@ function Property() {
 
   return (
     <div className="property">
-      <Carousel images={property.pictures} />
+      <Gallery images={property.pictures} />
       <div className="property__header">
         <div>
           <h1 className="property__title">{property.title}</h1>

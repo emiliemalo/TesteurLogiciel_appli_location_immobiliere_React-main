@@ -40,3 +40,16 @@
   flex-direction: column;
   gap: 1rem;
 }
+
+@media (max-width: 768px) {
+  .property__title {
+    font-size: 1.25rem;
+  }
+  .property__tags {
+    gap: 0.25rem;
+  }
+  .property__tag {
+    font-size: 0.65rem;
+    padding: 0.2rem 0.5rem;
+  }
+}

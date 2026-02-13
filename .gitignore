@@ -1,3 +1,15 @@
+.gitignore
 node_modules
 .DS_Store
+
+# Fichiers à ne pas committer (uniquement composants + code app)
 rules.md/
+RAPPORT_EVALUATION.md
+*.log
+.env
+.env.local
+dist/
+coverage/
+
+# Fichiers d'explication de tests
+**/EXPLICATION_TESTS_COMPOSANTS.md

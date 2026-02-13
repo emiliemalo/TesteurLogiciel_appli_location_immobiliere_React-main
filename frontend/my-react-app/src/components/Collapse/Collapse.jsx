@@ -13,11 +13,11 @@ function Collapse({ title, children }) {
         aria-expanded={open}
       >
         <span>{title}</span>
-        <span className="collapse__icon">{open ? '▼' : '▶'}</span>
+        <span className="collapse__icon" aria-hidden>▼</span>
       </button>
       {open && (
-        <div className="collapse__content">
-          {children}
+        <div className="collapse__content collapse__content--open">
+          <div className="collapse__content-inner">{children}</div>
         </div>
       )}
     </div>
