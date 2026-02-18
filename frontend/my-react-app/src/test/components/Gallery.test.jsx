@@ -56,4 +56,25 @@ describe('Gallery', () => {
     await user.click(screen.getByLabelText('Image précédente'))
     expect(screen.getByText('3 / 3')).toBeInTheDocument()
   })
+
+  it('updates main image src when navigating', async () => {
+    const user = userEvent.setup()
+    const { container } = render(<Gallery images={images} />)
+    const mainImg = container.querySelector('.gallery__img')
+    expect(mainImg).toHaveAttribute('src', '/img1.jpg')
+    await user.click(screen.getByLabelText('Image suivante'))
+    expect(mainImg).toHaveAttribute('src', '/img2.jpg')
+    await user.click(screen.getByLabelText('Image précédente'))
+    expect(mainImg).toHaveAttribute('src', '/img1.jpg')
+  })
+
+  it('handles images undefined as empty list', () => {
+    const { container } = render(<Gallery />)
+    expect(container.firstChild).toBeNull()
+  })
+
+  it('renders gallery container with class gallery', () => {
+    const { container } = render(<Gallery images={images} />)
+    expect(container.querySelector('.gallery')).toBeInTheDocument()
+  })
 })
