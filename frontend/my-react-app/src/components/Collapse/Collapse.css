@@ -27,16 +27,25 @@
   background: #e85555;
 }
 
+/* Chevron blanc (^) à droite, comme sur la maquette À propos */
 .collapse__icon {
-  font-size: 0.75rem;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   color: white;
   transition: transform 0.3s ease;
-  transform: rotate(180deg);
+  flex-shrink: 0;
+  transform: rotate(0deg);
 }
 
+.collapse__icon svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+/* Fermé : chevron vers le haut (^). Ouvert : chevron vers le bas (v) */
 .collapse--open .collapse__icon {
-  transform: rotate(0deg);
+  transform: rotate(180deg);
 }
 
 @keyframes collapse-content-in {
