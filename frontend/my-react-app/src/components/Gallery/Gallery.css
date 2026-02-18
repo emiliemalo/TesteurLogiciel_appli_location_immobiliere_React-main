@@ -26,6 +26,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.gallery__btn:focus,
+.gallery__btn:active {
+  outline: none;
+  background: transparent;
 }
 
 .gallery__btn-img {
