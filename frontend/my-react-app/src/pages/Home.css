@@ -14,3 +14,14 @@
 .home__error {
   color: #c00;
 }
+
+@media (max-width: 768px) {
+  .home {
+    gap: 1.5rem;
+  }
+  .home__loading,
+  .home__error {
+    padding: 1.5rem 1rem;
+    font-size: 0.875rem;
+  }
+}

@@ -9,3 +9,12 @@
   height: 14rem;
   object-fit: cover;
 }
+
+@media (max-width: 768px) {
+  .banner-about {
+    border-radius: 0.5rem;
+  }
+  .banner-about__img {
+    height: 10rem;
+  }
+}

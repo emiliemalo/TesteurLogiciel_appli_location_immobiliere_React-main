@@ -62,9 +62,19 @@
 @media (max-width: 768px) {
   .layout__header {
     padding: 1rem;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+  }
+  .layout__logo-img {
+    height: 40px;
   }
   .layout__nav {
     gap: 1rem;
+    flex-shrink: 0;
+  }
+  .layout__nav-link {
+    font-size: 12px;
+    text-transform: uppercase;
   }
   .layout__main {
     padding: 1rem;

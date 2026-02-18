@@ -69,3 +69,14 @@
 .collapse__content-inner p:last-child {
   margin-bottom: 0;
 }
+
+@media (max-width: 768px) {
+  .collapse__trigger {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.8125rem;
+  }
+  .collapse__content-inner {
+    padding: 0.75rem;
+    font-size: 0.875rem;
+  }
+}

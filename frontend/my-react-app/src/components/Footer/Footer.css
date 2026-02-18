@@ -20,3 +20,16 @@
   font-size: 0.875rem;
   color: #ffffff;
 }
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 2rem 1rem;
+    gap: 1rem;
+  }
+  .footer__logo {
+    height: 2rem;
+  }
+  .footer__text {
+    font-size: 0.75rem;
+  }
+}
