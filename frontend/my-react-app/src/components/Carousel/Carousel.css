@@ -18,12 +18,21 @@
   transform: translateY(-50%);
   width: 3rem;
   height: 3rem;
+  padding: 0;
   border: none;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.8);
-  font-size: 1.5rem;
+  background: transparent;
+  color: white;
   cursor: pointer;
-  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel__btn-img {
+  width: 2.5rem;
+  height: 4rem;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 .carousel__btn--prev {
@@ -34,8 +43,8 @@
   right: 1rem;
 }
 
-.carousel__btn:hover {
-  background: white;
+.carousel__btn:hover .carousel__btn-img {
+  opacity: 0.9;
 }
 
 .carousel__counter {

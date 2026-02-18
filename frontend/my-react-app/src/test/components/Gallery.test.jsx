@@ -12,9 +12,9 @@ describe('Gallery', () => {
   })
 
   it('renders first image and counter when multiple images', () => {
-    render(<Gallery images={images} />)
-    const img = screen.getByRole('img', { name: '' })
-    expect(img).toHaveAttribute('src', '/img1.jpg')
+    const { container } = render(<Gallery images={images} />)
+    const mainImg = container.querySelector('.gallery__img')
+    expect(mainImg).toHaveAttribute('src', '/img1.jpg')
     expect(screen.getByText('1 / 3')).toBeInTheDocument()
   })
 

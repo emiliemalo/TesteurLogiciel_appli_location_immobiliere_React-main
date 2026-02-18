@@ -59,6 +59,29 @@ function Property() {
           </ul>
         )}
       </div>
+      {property.host && (
+        <div className="property__host-rating">
+          <div className="property__host">
+            <span className="property__host-name">{property.host.name}</span>
+            <img
+              src={property.host.picture}
+              alt={property.host.name}
+              className="property__host-picture"
+            />
+          </div>
+          <div className="property__stars" aria-label={`Note : ${property.rating} sur 5`}>
+            {[1, 2, 3, 4, 5].map((i) => (
+              <span
+                key={i}
+                className={`property__star ${i <= Number(property.rating) ? 'property__star--filled' : ''}`}
+                aria-hidden
+              >
+                ★
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
       <div className="property__collapses">
         <Collapse title="Description">
           <p>{property.description}</p>

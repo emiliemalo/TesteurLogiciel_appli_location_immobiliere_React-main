@@ -22,7 +22,10 @@
 .cards__title {
   display: block;
   padding: 0.75rem;
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
   font-weight: 500;
+  color: #000;
 }
 
 .cards__item:hover .cards__img {

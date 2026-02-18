@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import vectorLeft from '../../assets/icons/vector-left.svg'
+import vectorRight from '../../assets/icons/vector-right.svg'
 import './Carousel.css'
 
 function Carousel({ images }) {
@@ -30,7 +32,7 @@ function Carousel({ images }) {
             onClick={goPrev}
             aria-label="Image précédente"
           >
-            ‹
+            <img src={vectorLeft} alt="" className="carousel__btn-img" />
           </button>
           <button
             type="button"
@@ -38,7 +40,7 @@ function Carousel({ images }) {
             onClick={goNext}
             aria-label="Image suivante"
           >
-            ›
+            <img src={vectorRight} alt="" className="carousel__btn-img" />
           </button>
           <span className="carousel__counter">
             {index + 1} / {list.length}

@@ -5,6 +5,7 @@ node_modules
 # Fichiers à ne pas committer (uniquement composants + code app)
 rules.md/
 RAPPORT_EVALUATION.md
+REPONSES_EVALUATION.md
 *.log
 .env
 .env.local

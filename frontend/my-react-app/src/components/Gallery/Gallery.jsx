@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import vectorLeft from '../../assets/icons/vector-left.svg'
+import vectorRight from '../../assets/icons/vector-right.svg'
 import './Gallery.css'
 
 function Gallery({ images }) {
@@ -30,7 +32,7 @@ function Gallery({ images }) {
             onClick={goPrev}
             aria-label="Image précédente"
           >
-            ‹
+            <img src={vectorLeft} alt="" className="gallery__btn-img" />
           </button>
           <button
             type="button"
@@ -38,7 +40,7 @@ function Gallery({ images }) {
             onClick={goNext}
             aria-label="Image suivante"
           >
-            ›
+            <img src={vectorRight} alt="" className="gallery__btn-img" />
           </button>
           <span className="gallery__counter">
             {index + 1} / {list.length}

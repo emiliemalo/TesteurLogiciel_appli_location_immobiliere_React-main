@@ -1,5 +1,4 @@
 .collapse {
-  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
   overflow: hidden;
 }
@@ -11,22 +10,29 @@
   align-items: center;
   padding: 0.75rem 1rem;
   border: none;
-  background: var(--collapse-bg, #f6f6f6);
+  background: #FF6060;
+  color: white;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: bold;
   cursor: pointer;
   text-align: left;
+  border-radius: 0.5rem;
+}
+
+.collapse--open .collapse__trigger {
+  border-radius: 0.5rem 0.5rem 0 0;
 }
 
 .collapse__trigger:hover {
-  background: var(--collapse-bg-hover, #eee);
+  background: #e85555;
 }
 
 .collapse__icon {
   font-size: 0.75rem;
   display: inline-block;
+  color: white;
   transition: transform 0.3s ease;
-  transform: rotate(-90deg);
+  transform: rotate(180deg);
 }
 
 .collapse--open .collapse__icon {
@@ -51,6 +57,8 @@
 .collapse__content-inner {
   padding: 1rem;
   background: white;
+  color: #000;
+  font-weight: normal;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
