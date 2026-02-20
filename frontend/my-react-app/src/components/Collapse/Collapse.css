@@ -43,9 +43,9 @@
   height: 1.25rem;
 }
 
-/* Fermé : chevron vers le haut (^). Ouvert : chevron vers le bas (v) */
+/* Fermé : chevron vers le haut (^). Ouvert : chevron vers le bas (v), rotation inverse */
 .collapse--open .collapse__icon {
-  transform: rotate(180deg);
+  transform: rotate(-180deg);
 }
 
 @keyframes collapse-content-in {

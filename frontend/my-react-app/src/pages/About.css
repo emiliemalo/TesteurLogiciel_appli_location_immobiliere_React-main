@@ -7,28 +7,26 @@
 .about__collapses {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 2rem;
+  max-width: 1023px;
+  margin: 0 auto;
+  width: 100%;
 }
 
-/* Maquette À propos : composants et flèches plus grands */
-.about__collapses .collapse {
-  border-radius: 0.5rem;
-}
-
+/* Maquette À propos : collapses plus compacts (même style que Property) */
 .about__collapses .collapse__trigger {
-  padding: 1.25rem 1.5rem;
-  font-size: 1.5rem;
-  font-weight: 700;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
 }
 
 .about__collapses .collapse__icon svg {
-  width: 2rem;
-  height: 2rem;
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
 .about__collapses .collapse__content-inner {
-  padding: 1.25rem 1.5rem;
-  font-size: 1.125rem;
+  padding: 1rem;
+  font-size: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -36,18 +34,18 @@
     gap: 1rem;
   }
   .about__collapses {
-    gap: 1rem;
+    gap: 1.25rem;
   }
   .about__collapses .collapse__trigger {
-    padding: 1rem 1.25rem;
-    font-size: 1.125rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.8125rem;
   }
   .about__collapses .collapse__icon svg {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.25rem;
+    height: 1.25rem;
   }
   .about__collapses .collapse__content-inner {
-    padding: 1rem 1.25rem;
-    font-size: 1rem;
+    padding: 0.75rem;
+    font-size: 0.875rem;
   }
 }
