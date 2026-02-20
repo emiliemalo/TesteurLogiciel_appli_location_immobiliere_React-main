@@ -4,6 +4,22 @@
   gap: 2rem;
 }
 
+.home > .banner {
+  margin-top: -2rem;
+  margin-left: -2rem;
+  margin-right: -2rem;
+  width: calc(100% + 4rem);
+}
+
+@media (max-width: 768px) {
+  .home > .banner {
+    margin-top: -1rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    width: calc(100% + 2rem);
+  }
+}
+
 .home__loading,
 .home__error {
   text-align: center;
