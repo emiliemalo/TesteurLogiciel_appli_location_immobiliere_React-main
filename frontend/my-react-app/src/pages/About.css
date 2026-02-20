@@ -13,10 +13,11 @@
   width: 100%;
 }
 
-/* Maquette À propos : collapses plus compacts (même style que Property) */
+/* Maquette À propos : titres en 24px */
 .about__collapses .collapse__trigger {
   padding: 0.75rem 1rem;
-  font-size: 1rem;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .about__collapses .collapse__icon svg {
@@ -35,17 +36,22 @@
   }
   .about__collapses {
     gap: 1.25rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    width: calc(100% + 2rem);
+    max-width: none;
   }
   .about__collapses .collapse__trigger {
-    padding: 0.5rem 0.75rem;
-    font-size: 0.8125rem;
+    padding: 0.5rem 1rem;
+    font-size: 24px;
+    font-weight: bold;
   }
   .about__collapses .collapse__icon svg {
     width: 1.25rem;
     height: 1.25rem;
   }
   .about__collapses .collapse__content-inner {
-    padding: 0.75rem;
+    padding: 0.75rem 1rem;
     font-size: 0.875rem;
   }
 }

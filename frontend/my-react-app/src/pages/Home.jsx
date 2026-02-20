@@ -46,7 +46,9 @@ function Home() {
         image={backgroundImage}
         title="Chez vous, partout et ailleurs"
       />
-      <Cards items={properties} />
+      <div className="home__cards-wrapper">
+        <Cards items={properties} />
+      </div>
     </div>
   )
 }

@@ -12,23 +12,18 @@
   margin-bottom: 2rem;
 }
 
-.home > .cards {
-  position: relative;
+.home__cards-wrapper {
   margin-top: 2rem;
 }
 
-/* Fond #F6F6F6 autour des cards, uniquement sur desktop (page Home) */
+/* Fond gris #F6F6F6 derrière les cards, uniquement sur desktop (page Home) */
 @media (min-width: 769px) {
-  .home > .cards::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -2rem;
-    right: -2rem;
-    bottom: 0;
+  .home__cards-wrapper {
+    margin-left: -2rem;
+    margin-right: -2rem;
+    width: calc(100% + 4rem);
     background-color: #F6F6F6;
     border-radius: 1.5rem;
-    z-index: -1;
   }
 }
 
@@ -40,7 +35,7 @@
     width: calc(100% + 2rem);
     margin-bottom: 1.5rem;
   }
-  .home > .cards {
+  .home__cards-wrapper {
     margin-top: 1.5rem;
   }
 }
