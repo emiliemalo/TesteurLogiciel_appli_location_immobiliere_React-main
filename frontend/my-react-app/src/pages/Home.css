@@ -1,38 +1,34 @@
+/* Base = mobile (évite que les styles desktop ne cassent le mobile) */
 .home {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
   min-width: 0;
 }
 
 .home > .banner {
   margin-top: 0;
-  margin-left: -2rem;
-  margin-right: -2rem;
-  width: calc(100% + 4rem);
-  margin-bottom: 2rem;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  box-sizing: border-box;
 }
 
 .home__cards-wrapper {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
   min-width: 0;
-}
-
-/* Fond gris #F6F6F6 derrière les cards, uniquement sur desktop (page Home) */
-@media (min-width: 769px) {
-  .home__cards-wrapper {
-    margin-left: -2rem;
-    margin-right: -2rem;
-    width: calc(100% + 4rem);
-    background-color: #F6F6F6;
-    border-radius: 1.5rem;
-  }
+  box-sizing: border-box;
 }
 
 .home__loading,
 .home__error {
   text-align: center;
-  padding: 2rem;
+  padding: 1.5rem 1rem;
+  font-size: 0.875rem;
   color: #000000;
 }
 
@@ -40,26 +36,28 @@
   color: #c00;
 }
 
-/* Mobile : une seule media query pour la page Home */
-@media (max-width: 768px) {
+/* Desktop uniquement : full-bleed banner + fond gris wrapper */
+@media (min-width: 769px) {
   .home {
-    gap: 1.5rem;
+    gap: 2rem;
   }
   .home > .banner {
-    margin-top: 0;
-    margin-left: -1rem;
-    margin-right: -1rem;
-    width: calc(100% + 2rem);
-    margin-bottom: 1.5rem;
+    margin-left: -2rem;
+    margin-right: -2rem;
+    width: calc(100% + 4rem);
+    margin-bottom: 2rem;
   }
   .home__cards-wrapper {
-    margin-top: 1.5rem;
-    width: 100%;
-    box-sizing: border-box;
+    margin-top: 2rem;
+    margin-left: -2rem;
+    margin-right: -2rem;
+    width: calc(100% + 4rem);
+    background-color: #F6F6F6;
+    border-radius: 1.5rem;
   }
   .home__loading,
   .home__error {
-    padding: 1.5rem 1rem;
-    font-size: 0.875rem;
+    padding: 2rem;
+    font-size: inherit;
   }
 }
